@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menuprincipal.master.cs" Inherits="Examen_JersonMoraga.Menuprincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+   <link href="css/Menu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <div>
+                <div class="navbar">
+                    <a href="Inicio.aspx">Inicio</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Resportes 
+      <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="Usuarios.aspx">Reporte de Usuarios</a>
+                            <a href="Mascotas.aspx">Reporte de Mascostas</a> 
+                            <a href="Citas.aspx">Reporte de control de Citas</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Salir
+      <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                             <a href="Home.aspx">Salir al menu Principal</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
